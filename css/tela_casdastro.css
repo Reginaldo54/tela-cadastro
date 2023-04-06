@@ -1,0 +1,143 @@
+
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+}
+
+body{
+
+    width: 375px;
+    height: 812px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+main{
+    /*nada por enquanto*/
+    position: relative;
+    display: inline-block;
+}
+
+
+/*Apresentação Tela*/
+
+#apresentacao_tela{
+    /*vai afetar todo o código dentro desse id*/
+    position: relative;
+
+    margin-top: 20%;
+ 
+
+}
+
+#apresentacao_tela img
+{
+   
+    width: 35%;
+    
+
+}
+
+#apresentacao_tela #texto
+{
+    margin-top: 12%;
+    margin-left: 11%;
+    text-align: left;
+    
+} 
+
+#apresentacao_tela #texto h2
+{
+    font-size: 24px;
+    padding: 3% 0px;
+} 
+
+#apresentacao_tela #texto span
+{
+    font-size: 12px;
+    font-weight: 500;
+
+} 
+
+    /* ==== Campos de input ====*/
+
+#campo_inputs{
+    position: relative;
+   
+
+}
+
+/*Classe inputing que mexe com os 3 inputs*/
+.inputing{
+
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 12px;
+  width: 291px;
+  margin-top: 9%;
+  background-color: black;
+  color: white;   
+}
+
+::placeholder
+{
+    text-align: center;
+    color: white;
+}
+
+/*Login input*/
+
+/*Email input*/
+
+/*Senha input*/
+
+/*radios input - escolha de profissão*/
+
+#tipo_conta
+{
+    margin-top: 7%;
+}
+
+#tipo_conta input
+{
+    
+    width: 40%;
+    height: 40%;
+    cursor: pointer;
+}
+
+
+#tipo_conta ul
+{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+
+/*Botão*/
+
+button
+{
+
+    /*texto*/
+    font-size: 12px;
+    font-weight: 600;
+
+
+    margin-top: 10%;
+    background-color: black;
+    color: white;
+    padding: 12px 30%;
+    border-radius: 5px;
+}

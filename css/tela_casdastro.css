@@ -10,8 +10,9 @@
 
 body{
 
-    width: 375px;
-    height: 812px;
+    min-width: 375px;
+    min-height: 812px;
+    height: 2500px;
     margin: auto;
     text-align: center;
     border: 1px solid black;
@@ -38,7 +39,7 @@ main{
 #apresentacao_tela img
 {
    
-    width: 35%;
+    width: 33%;
     
 
 }
@@ -46,20 +47,21 @@ main{
 #apresentacao_tela #texto
 {
     margin-top: 12%;
-    margin-left: 11%;
+    /*margin-left: clamp(11%, 5vw, 11%);*/
+    margin-left: clamp(75px, 15vw, 150px);
     text-align: left;
     
 } 
 
 #apresentacao_tela #texto h2
 {
-    font-size: 24px;
+    font-size: clamp(30px, 10vw, 80px);
     padding: 3% 0px;
 } 
 
 #apresentacao_tela #texto span
 {
-    font-size: 12px;
+    font-size: clamp(18px, 5vw, 40px);
     font-weight: 500;
 
 } 
@@ -74,19 +76,22 @@ main{
 
 /*Classe inputing que mexe com os 3 inputs*/
 .inputing{
-
+    
   text-align: center;
   border: 1px solid black;
-  border-radius: 5px;
-  padding: 12px;
-  width: 291px;
+  border-radius: clamp(5px, 5vw, 15px);
+  padding: clamp(15px, 5vw, 25px);
+  width: clamp(291px, 85vw, 1100px);
   margin-top: 9%;
   background-color: black;
   color: white;   
+  font-size: clamp(18px, 5vw, 40px);  
+
 }
 
 ::placeholder
 {
+    font-size: clamp(12px, 5vw, 36px);
     text-align: center;
     color: white;
 }
@@ -107,9 +112,17 @@ main{
 #tipo_conta input
 {
     
-    width: 40%;
-    height: 40%;
+    width: clamp(30px, 10vw, 80px);
+    height: clamp(30px, 10vw, 80px);
     cursor: pointer;
+    color: red;
+}
+
+#tipo_conta label
+{
+    font-size: clamp(12px, 5vw, 64px);
+    font-weight: 700;
+    
 }
 
 
@@ -131,13 +144,13 @@ button
 {
 
     /*texto*/
-    font-size: 12px;
+    font-size: clamp( 18px, 5vw, 40px);
     font-weight: 600;
-
-
-    margin-top: 10%;
+    text-align: center;
+    margin-top: clamp(30px, 10vw, 120px);
     background-color: black;
     color: white;
-    padding: 12px 30%;
-    border-radius: 5px;
+    padding: clamp(15px, 5vw, 25px);
+    width: clamp(291px, 85vw, 1100px);
+    border-radius: clamp( 5px, 5vw, 15px);
 }

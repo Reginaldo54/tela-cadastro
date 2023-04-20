@@ -34,8 +34,8 @@ main{
 
 #apresentacao_tela img
 {
-   
-    max-width: 24%;
+   margin-top: 15%;
+    max-width: 28%;
 
     
 }
@@ -149,4 +149,5 @@ button
     padding: clamp(15px, 5vw, 20px);
     width: clamp(291px, 85vw, 900px);
     border-radius: clamp( 5px, 5vw, 15px);
+    margin-bottom: 10%;
 }
